@@ -93,7 +93,7 @@ print("          Average age: ", round(age_avg, 2))
 
 #Use distance matrix API
 
-API = 'AIzaSyDci_4vadjcyHoys4ZxU7YVyXlZvNtufvA'
+API = input("Enter the API Key:/n")
 
 import requests
 import json
@@ -127,7 +127,7 @@ for row in leads:
     duration_value = (json.loads(response.text))["rows"][0]["elements"][0]["duration"]["value"]
     duration_sum = duration_sum + duration_value
 
-#Convers meters to miles (distance) and seconds to hours (duration) and calculate average
+#Convert meters to miles (distance) and seconds to hours (duration) and calculate average
 distance_avg = round((distance_sum*0.000621371)/len(leads), 2)
 duration_avg = round((duration_sum/60)/len(leads), 2)
 

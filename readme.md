@@ -10,9 +10,17 @@ CONTENTS OF THIS FILE
 4. FUTURE WORK
 #
 
-QUICKSTART
+QUICKSTART 
 -------------------
-Open terminal and enter the following commands:
+For VS code:
+
+Activate venv by entering the following command from command prompt: 
+    
+    venv\Scripts\activate.bat
+
+You might need to change your default interpreter to command prompt and restart the terminal.
+
+Enter the following terminal commands:
 
     pip install -r requirements.txt
     python registration.py

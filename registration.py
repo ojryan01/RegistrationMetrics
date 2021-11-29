@@ -84,20 +84,15 @@ age_avg = age_sum / len(leads)
 print('Demographics:')
 print("                       Average age: ", round(age_avg, 2))
 
-#Use distance matrix API
+#Use Google Distance Matrix API
+#Get the driving distance and duration for each lead from their given address to our business location
 
 distance_sum = 0
 duration_sum = 0
 
-#Get the driving distance and duration for each lead from their given address to our business location
-
 for row in leads:
     lead_address = row['Address']
-    #print(lead_address)
-
     lead_address_URL = urllib.parse.quote(lead_address)
-
-    #print(lead_address_URL)
 
     url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=420+E+8th+Street,+New+Albany,+IN&destinations=" + lead_address_URL + '&units=imperial&key=' + API
 
@@ -106,7 +101,6 @@ for row in leads:
 
     response = requests.request("GET", url, headers=headers, data=payload)
 
-    #print(response.text)
     distance_value = (json.loads(response.text))["rows"][0]["elements"][0]["distance"]["value"]
     distance_sum = distance_sum + distance_value
 

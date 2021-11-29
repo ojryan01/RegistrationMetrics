@@ -4,12 +4,20 @@ REGISTRATION METRICS
 
 CONTENTS OF THIS FILE
 ---------------------
-1. PROJECT DESCRIPTION
-2. SPECIAL INSTRUCTIONS
-3. REQUIREMENTS
-3. FUTURE WORK
+1. QUICKSTART 
+2. PROJECT DESCRIPTION
+3. SPECIAL INSTRUCTIONS
+4. FUTURE WORK
 #
 
+QUICKSTART
+-------------------
+Open your terminal of choice and enter the following commands.
+
+    pip install -r requirements.txt
+    python registration.py
+
+You will be prompted to enter a file path to the and an API key in your console. These are provided upon request.
 
 PROJECT DESCRIPTION
 -------------------

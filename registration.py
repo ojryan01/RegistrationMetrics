@@ -7,10 +7,17 @@ import geopy.distance
 import googlemaps
 import urllib.parse
 
+print("")
+print("Welcome to Registration Metrics")
+print("-------------------------------")
+
 #empty list
 leads = []
-file_path = r"C:\Users\olivi\source\repos\RegistrationMetrics\MetricsSimple.csv"
+file_path =  input("Enter the file path:")
 input_file = csv.DictReader(open(file_path))
+
+#collect the API Key
+API = input("Enter the API Key:")
 
 for row in input_file:
     leads.append(row)
@@ -92,8 +99,6 @@ print('Demographics:')
 print("          Average age: ", round(age_avg, 2))
 
 #Use distance matrix API
-
-API = input("Enter the API Key:/n")
 
 import requests
 import json

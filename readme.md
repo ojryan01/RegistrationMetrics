@@ -12,12 +12,13 @@ CONTENTS OF THIS FILE
 
 QUICKSTART
 -------------------
-Open your terminal of choice and enter the following commands.
+Open terminal and enter the following commands:
 
     pip install -r requirements.txt
     python registration.py
 
-You will be prompted to enter a file path to the and an API key in your console. These are provided upon request.
+You will be prompted to enter an API key in your console. Key will be provided upon request. 
+The application will load the sample data file MetricsSimple.csv from the same directory as registration.py.
 
 PROJECT DESCRIPTION
 -------------------
@@ -37,7 +38,7 @@ SPECIAL INSTRUCTIONS
 ---------------------------
 The application will ask for an API Key to be entered. This is available upon request.
 
-The sample data set MetricsSimple.csv is available upon request. You can save it anywhere locally and the application will prompt you for the file path.
+The sample data set MetricsSimple.csv is available upon request. The program opens the file from the current directory. 
 
 ---------------------------------------------------------------
 FUTURE DEVELOPMENT AND LIMITATIONS
